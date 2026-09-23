@@ -3,6 +3,10 @@ siteable-demo attribution notice
 This demo shell is Copyright (c) 2026 Siteable Contributors, distributed under
 the MIT License — see LICENSE for the full text.
 
+The copyright line in LICENSE is carried over verbatim from @siteable/core,
+the engine this demo runs. Copyright of the demo-shell files in this
+repository is held by Siteable Contributors, as stated above.
+
 It consumes @siteable/core, the engine subset of OpenPage, which is itself
 distributed under the MIT License — see that package's own LICENSE and NOTICE
 for the OpenPage lineage.
