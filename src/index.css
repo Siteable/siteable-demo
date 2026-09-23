@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+/* @siteable/core supplies the engine-side design tokens, animations, and
+   utility classes (theme, keyframes, utilities). This repo consumes the
+   installed @siteable/core package the same way static-cms does — via the
+   node_modules-installed path (this repo has no packages/ workspace history).
+   node_modules is excluded from Tailwind v4's auto-scan, hence the explicit
+   @source. */
+@source "../node_modules/@siteable/core/src/**/*.{ts,tsx}";
+@import "../node_modules/@siteable/core/src/styles.css";
+
+:root {
+  --color-accent-rgb: 34, 197, 94;
+}
+
+html {
+  font-size: 14px;
+}
+
+body {
+  font-family: var(--font-sans);
+  background: var(--color-bg-0);
+  color: var(--color-text-0);
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-bg-4);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-bg-5);
+}
+
+/* Focus states */
+*:focus-visible:not(textarea) {
+  outline: 2px solid var(--color-green);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible {
+  outline: 2px solid var(--color-green);
+  outline-offset: 2px;
+}
+
+textarea:focus-visible {
+  outline: none;
+}
