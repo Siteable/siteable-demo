@@ -1,0 +1,11 @@
+siteable-demo attribution notice
+
+This demo shell is Copyright (c) 2026 Siteable Contributors, distributed under
+the MIT License — see LICENSE for the full text.
+
+It consumes @siteable/core, the engine subset of OpenPage, which is itself
+distributed under the MIT License — see that package's own LICENSE and NOTICE
+for the OpenPage lineage.
+
+This repository contains no directly-inherited OpenPage source files; all
+engine code arrives via the npm dependency @siteable/core.
