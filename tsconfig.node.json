@@ -19,7 +19,11 @@
     "noUnusedParameters": true,
     "erasableSyntaxOnly": true,
     "noFallthroughCasesInSwitch": true,
-    "noUncheckedSideEffectImports": true
+    "noUncheckedSideEffectImports": true,
+
+    /* This project compiles only vite.config.ts — no ambient @types
+       auto-inclusion (would leak DOM/react globals). REVIEW2 hardening. */
+    "types": []
   },
   "include": ["vite.config.ts"]
 }
