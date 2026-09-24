@@ -23,6 +23,10 @@ npm run verify  # typecheck + build + tests
 
 Contributor gate: `npm run verify` MUST pass before pushing.
 
+Also run a full-history secret scan with gitleaks (pinned v8.21.2, e.g.
+`gitleaks detect --log-opts="--all"`) before pushing — the Pages deploy pipeline
+runs no test gate of its own.
+
 Cloudflare Pages builds on push to `main` — there is no other CI.
 
 ### Updating the engine
