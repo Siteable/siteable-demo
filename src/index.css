@@ -2,7 +2,7 @@
 
 /* @siteable/core supplies the engine-side design tokens, animations, and
    utility classes (theme, keyframes, utilities). This repo consumes the
-   installed @siteable/core package the same way static-cms does — via the
+   installed @siteable/core package the same way any consumer app does — via the
    node_modules-installed path (this repo has no packages/ workspace history).
    node_modules is excluded from Tailwind v4's auto-scan, hence the explicit
    @source. */
