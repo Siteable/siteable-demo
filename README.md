@@ -8,8 +8,8 @@ truth.
 
 ## Live demo
 
-**https://siteable-demo.pages.dev** — always built by Cloudflare Pages from the
-latest push to `main`. (Preview URLs exist per non-`main` branch.)
+**https://demo.siteable.app** — always built by Cloudflare Pages from the
+latest push to `main` (CI origin: `siteable-demo.pages.dev`; preview URLs exist per non-`main` branch).
 
 ## Development
 
