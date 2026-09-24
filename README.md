@@ -8,7 +8,8 @@ truth.
 
 ## Live demo
 
-TODO-after-deploy — the Cloudflare Pages URL will be added here once deployed.
+**https://siteable-demo.pages.dev** — always built by Cloudflare Pages from the
+latest push to `main`. (Preview URLs exist per non-`main` branch.)
 
 ## Development
 
