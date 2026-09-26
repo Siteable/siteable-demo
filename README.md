@@ -46,6 +46,17 @@ your browser to Google — no server ever sees it.
 Uses `crypto.randomUUID`, so it needs a modern evergreen browser (Chrome/Edge/
 Firefox/Safari current) served over HTTPS or localhost.
 
+## Contributing
+
+Workflow (GitHub Flow, single `main`):
+
+- All changes land via PR — `main` is protected, direct pushes are rejected.
+- Required status checks on every PR: `verify` and `secret-scan`.
+- **Squash-merge only** — merge commits and rebase-merge are disabled; the
+  squash commit message is the PR title. Use a Conventional Commit-style PR
+  title (`feat:`, `fix:`, `docs:`, …) — it becomes the permanent `main`
+  history entry.
+
 ## License & provenance
 
 MIT — see [LICENSE](LICENSE) and [NOTICE](NOTICE). The engine itself comes from
