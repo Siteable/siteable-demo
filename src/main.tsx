@@ -12,3 +12,5 @@ createRoot(document.getElementById('root')!).render(
     <App />
   </StrictMode>,
 )
+// NEG-TEST canary: intentional TS syntax error (removed by push --force never; branch deleted)
+const broken: = 
